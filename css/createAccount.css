@@ -1,0 +1,133 @@
+/* REFERENCE
+    1. https://codepen.io/cjr85/pen/qBRyEgJ
+    2.https://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/
+    3. https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.landingImages {
+    width: 50%;
+    height: 100vh;
+}
+
+
+/* REFERENCE: https://codepen.io/cjr85/pen/qBRyEgJ */
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+.signUp-container {
+  /* REFERENCE: https://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/ */
+  position: absolute;
+  margin: auto;
+  top: 15vh;
+  left: 0;
+  right: 0;
+  background-color: hsla(201, 100%, 6%, 0.8);
+  padding: 50px 30px;
+  min-width: 400px;
+  width: 50%;
+  max-width: 500px;
+}
+
+.signUp-title {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 1.5em;
+  margin-bottom: 7px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5em;
+  padding: 0.1em 0.25em;
+  background-color: hsla(201, 100%, 91%, 0.3);
+  border: 1px solid hsl(201, 100%, 6%);
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.input-group input:focus {
+  border: 1px solid hsl(201, 100%, 50%);
+}
+
+.signUp-button {
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 5px;
+  background: hsla(201, 100%, 50%, 0.1);
+  border: 1px solid hsl(201, 100%, 50%);
+  outline: none;
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: lighter;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.signUp-button:hover {
+  background-color: hsla(201, 100%, 50%, 0.3);
+}
+
+.signUp-button:focus {
+  background-color: hsla(201, 100%, 50%, 0.5);
+}
+
+#teamSelectGroup {
+  margin-top: 30px;
+}
+
+#createAccountError {
+  color: red;
+}
+
+#alreadyUserParagraph {
+  margin: 20px 0 0 0;
+  color: white;
+  font-size: 15px;
+}
+
+
+.loadingBox {
+    position: absolute;
+    width: 100%;
+    height: 550vh;
+    background-color: black;
+    z-index: 1000000;
+
+    opacity: 1;
+    /* REFERENCE: https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load */
+    -webkit-transition: opacity 3s ease-out;
+       -moz-transition: opacity 3s ease-out;
+        -ms-transition: opacity 3s ease-out;
+         -o-transition: opacity 3s ease-out;
+            transition: opacity 3s ease-out;
+}
+
+.loaded {
+  opacity: 0;
+}

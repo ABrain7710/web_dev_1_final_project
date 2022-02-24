@@ -1,0 +1,46 @@
+<!-- 
+    Name: Andrew Brain
+    Pawprint: amb5cb
+    Date: 
+    Final Project
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chess</title>
+    <!-- Font Awesome CDN : https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-cdn-webfont#load-all-styles -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="css/landing.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 id="landingHeader">SELECT YOUR FAVORITE TEAM</h1>
+
+    <a href="pages/home.html" onclick="setLocalStorage('iron')"><img class="landingImages teamIronManImage"
+            src="imagesUniversial/landingPagePhoto_1.jpg" alt="Team Iron Man"></a><a href="pages/home.html"
+        onclick="setLocalStorage('cap')"><img class=" landingImages teamCapImage"
+            src="imagesUniversial/landingPagePhoto_2.jpg" alt="Team Captain America"></a>
+
+    <a id="landingLogInButton" href="pages/signInForm.php">Log In</a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+    <script src="js/setLocalStorage.js"></script>
+</body>
+
+</html>

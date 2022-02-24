@@ -1,0 +1,15 @@
+
+/* Captain America Color Scheme */
+body {
+    background-color:rgb(24, 24, 28);
+}
+.descriptionBackground, .enemyEquivalentWrapper {
+    background-color: rgb(29, 32, 54);   
+}
+
+.pieceDescriptionHeader, .enemyEquivalentHeader, .description {
+    color: white;
+}
+
+
+

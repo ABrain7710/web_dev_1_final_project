@@ -1,0 +1,46 @@
+.navLink:hover, #userNameDropDown {
+    color: #fbca03;
+}
+
+.navLink:hover:after {
+    background: #fbca03;
+}
+
+body, #userNameDropDownItem, .cardGamePlayButton, .abilityCardLink a, .abilityCardVerticalLink a, .endGameCardLink a, .endGameCardLink a {
+    background-color: #4b0908;
+}
+
+#homeTop, #homeAbilities, #enemyRecon {
+    background-color: #340707;
+}
+
+#navBarCustom, .gameCardGrid, .playNowButton, .castling, .enP, .pawnPromotion, .draw, .checkMate, #modalContent {
+    background-color: #6a0c0b;
+}
+
+#modalButtonText {
+    background-color: #6a0c0b;
+    border: 3px solid black;
+}
+
+.movesImage:hover {
+    box-shadow: 5px 5px 10px black;
+}
+
+#userNameDropDownItem a:hover {
+    background-color: #4b0908;
+}
+
+.learnMoreButton:hover, .playNowButton:hover, .cardGamePlayButton:hover, #userNameDropDownItem a:hover {
+    color: rgb(135, 116, 116);
+}
+
+.textColor {
+    color: #fbca03;
+}
+
+#teamBackgroundImage {
+    position: fixed;
+    top: 100px;
+    right: 5px;
+}

@@ -1,0 +1,200 @@
+<!-- 
+    Name: Andrew Brain
+    Pawprint: amb5cb
+    Date: May 5, 2021
+    Final Project
+ -->
+<!-- <?php
+	require_once "../../php/redirectsByTeam.php";
+
+?> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <!-- <link href="../css/universial.css" rel="stylesheet"> -->
+    <link href="../css/home.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="loadingBox"></div>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navBarCustom">
+        <div class="container" id="navBarWrapper">
+            <a href="home.html" class="navLink logo"><img src="" alt="Chess Avengers Edition"></a>
+            <ul class=" navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="#homeMoves" class="navLink textColor">Moves</a>
+                </li>
+                <li class=" nav-item">
+                    <a href="#homeAbilities" class="navLink textColor">Abilities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#endGame" class="navLink textColor">Winning</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#enemyRecon" class="navLink textColor">Enemy Recon</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto" id="rightSideNav">
+            </ul>
+        </div>
+    </nav>
+    <img id="teamBackgroundImage" src="" alt="iron man">
+
+    <div id="homeTop">
+    </div>
+    <div class="homeContent" id="homeMoves">
+        <div class="homeContentHeaderWrapper">
+            <h1 class="homeContentHeader textColor">Learn How to Move Your Players</h1>
+        </div>
+        <div class="homeMovesGrid friendlyImages">
+
+        </div>
+    </div>
+    <div id="homeAbilities">
+        <div id="homeAbilityHeaderWrapper">
+            <h1 id="homeAbilityHeader" class="textColor">Your Team&#39;s Special Abilities</h1>
+        </div>
+        <div class="homeAbilityGrid">
+            <div class="castling">
+                <div class="abilityHorizontalCardGrid">
+                    <div class="abilityCardHeader textColor">
+                        <h1>Castling</h1>
+                    </div>
+                    <div class="abilityCardText textColor">
+                        <p id="castlingDescription"></p>
+                    </div>
+                    <div class="abilityCardLink">
+                        <a id="castlingLearnMore" class="learnMoreButton textColor" href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="enP">
+                <div class="abilityHorizontalCardGrid">
+                    <div class="abilityCardHeader textColor">
+                        <h1>En Passant</h1>
+                    </div>
+                    <div class="abilityCardText textColor">
+                        <p id="epDescription"></p>
+                    </div>
+                    <div class="abilityCardLink">
+                        <a id="epLearnMore" class="learnMoreButton textColor" href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pawnPromotion">
+                <div class="abilityVerticalCardGrid">
+                    <div class="abilityCardVerticalHeader textColor">
+                        <h1>Pawn Promotion</h1>
+                    </div>
+                    <div class="abilityCardVerticalText textColor">
+                        <p id="pawnPromotionDescription"></p>
+                    </div>
+                    <div class="abilityCardVerticalLink">
+                        <a id="pawnPromotionLearnMore" class="learnMoreButton textColor" href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="endGame">
+        <div id="endGameHeaderWrapper">
+            <h1 id="endGameHeader" class="textColor">How To Win The Fight</h1>
+        </div>
+        <div class="homeEndGameGrid">
+            <div class="draw">
+                <div class="endGameCardGrid">
+                    <div class="endGameCardHeader textColor">
+                        <h1>Draws</h1>
+                    </div>
+                    <div class="endGameCardText textColor">
+                        <p>Something You Only Go For In Dire Circumstances</p>
+                    </div>
+                    <div class="endGameCardLink">
+                        <a id="drawLearnMore" class="learnMoreButton textColor" href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="checkMate">
+                <div class="endGameCardGrid">
+                    <div class="endGameCardHeader textColor">
+                        <h1>CheckMate</h1>
+                    </div>
+                    <div class="endGameCardText textColor">
+                        <p>The Way To Win<br> The Only Thing That Should Be Expected</p>
+                    </div>
+                    <div class="endGameCardLink">
+                        <a id="checkMateLearnMore" class="learnMoreButton textColor" href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="losingQuoteWrapper">
+            <h2 id="losingQuote" class="textColor">...LOSING IS NOT AN OPTION</h2>
+        </div>
+    </div>
+    <div class="homeContent" id="enemyRecon">
+        <div class="homeContentHeaderWrapper">
+            <h1 class="homeContentHeader textColor">Enemy Recon</h1>
+        </div>
+        <div class="homeMovesGrid enemyImages">
+        </div>
+    </div>
+    <div class="footer"></div>
+
+
+    <!-- REFERENCE: bootstrap modal -->
+    <div class="modal fade" id="findGameModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div id="modalContent" class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 id="modalHeader" class="textColor modal-title w-100 font-weight-bold">Challenge the Enemy Team
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="textColor" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-3">
+                        <label class="textColor" data-error="wrong" data-success="right" for="defaultForm-email">Enter
+                            a Username</label>
+                        <input type="text" id="usernameInput" class="form-control" validate>
+                    </div>
+                    <div id="modalErrorBox" class="textColor">
+                        <p id="modalError"></p>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button id="modalButtonText" class="textColor btn btn-default"
+                        onclick="addGame()">Challenge</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

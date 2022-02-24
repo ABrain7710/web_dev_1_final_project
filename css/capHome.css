@@ -1,0 +1,51 @@
+
+
+/* Captain America Color Theme */
+.navLink:hover, #userNameDropDown {
+    color: white;
+}
+
+.navLink:hover:after {
+    background: white;
+}
+
+body, #userNameDropDownItem, .cardGamePlayButton, .abilityCardLink a, .abilityCardVerticalLink a, .endGameCardLink a, .endGameCardLink a {
+    background-color: rgb(24, 24, 28);
+}
+
+#homeTop, #homeAbilities, #enemyRecon {
+    background-color: rgb(29, 32, 54);
+}
+
+#navBarCustom, .gameCardGrid, .playNowButton, .castling, .enP, .pawnPromotion, .draw, .checkMate, #modalContent {
+    background-color: rgb(59, 71, 113);
+    
+}
+
+#modalButtonText {
+    background-color: rgb(29, 32, 54);
+    border: 3px solid black;
+}
+
+.movesImage:hover {
+    box-shadow: 5px 5px 10px black;
+}
+
+#userNameDropDownItem a:hover {
+    background-color: rgb(24, 24, 28)
+}
+
+.learnMoreButton:hover, .playNowButton:hover, .cardGamePlayButton:hover, #userNameDropDownItem a:hover {
+    color: rgb(135, 116, 116);
+}
+
+.textColor {
+    color: white;
+}
+
+#teamBackgroundImage {
+    position: fixed;
+    top: 100px;
+    left: 5px;
+    width: 25%;
+}

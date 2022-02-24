@@ -1,0 +1,51 @@
+
+.youtubeFrame {
+    width: 672px;
+    height: 504px;
+}
+
+.videoWrapper {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.pieceDescriptionHeader, .enemyEquivalentHeader {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 60px;  
+}
+
+.description {
+    text-align: center;
+    font-size: 20px;
+}
+
+.descriptionWrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.descrptionImage, .descrptionImageEnemy {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.enemyEquivalentWrapper {
+    padding: 0 0 50px 0;
+}
+
+.drawHeaders {
+    font-size: 35px;
+}
+
+.descrptionImageEnemy:hover {
+    box-shadow: 5px 5px 10px black;
+}
+
+
+
+
